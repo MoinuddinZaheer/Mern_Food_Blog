@@ -30,7 +30,7 @@ const navigate = useNavigate()
   // }
 
   const searchuser = (e) => {
-      setSearchInput(allpost.filter(x=> x.title.toLowerCase().includes(e.target.value)))
+      setSearchInput(allpost.filter(x=> x.title.toLowerCase().includes(e.target.value.toLowerCase())))
   }
     
   return (
